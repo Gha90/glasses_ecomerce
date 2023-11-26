@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout Page</title>
+
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+   
+    <div class="header-area">
+        <div class="container">
+            <div class="user-menu">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="cart.html">My Cart</a></li>
+                    <li><a href="single-product.html">Single product</a></li>
+                    <li><a href="checkout.html"> Checkout</a></li>
+                    <li><a href="members.html">Students</a></li>
+                    <li><a href="contact.html"> Contact Us</a></li>
+                    <li><a href="login.html"> Logout</a></li>
+                </ul>
+            </div>  
+        </div>
+    </div> 
+    
+    <h1 style="font-size: 25px; color: rgb(207, 139, 75);">Students Name</h1>
+    <ul id="groupList" style=" list-style-type: none; margin-bottom: 380px; margin-left: 15px; color: rgb(212, 27, 27);">
+    </ul>
+
+
+    <div class="footer-bottom-area" style="text-align: center; padding: 5px;">
+        <p>&copy; 2024 Glasses Store All Rights Reserved. </p>
+    </div>
+
+
+    <script>
+        const members = [
+            'Ghala Abdullah Albalawi 431003835',
+            'Tahani Saeid AlQasimi 431003395',
+            'Rahaf Msaed Alhwety 421006504',
+            'Mashael Abdulrahman Alqahtani 431003673',
+        ];
+        const groupList = document.getElementById('groupList');
+
+        function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+        }
+
+        function displayList() {
+        const shuffledMembers = shuffleArray(members);
+
+        groupList.innerHTML = '';
+
+        shuffledMembers.forEach((member) => {
+            const listItem = document.createElement('li');
+            listItem.textContent = member;
+            groupList.appendChild(listItem);
+        });
+        }
+
+        displayList();
+
+    </script>
+  </body>
+</html>

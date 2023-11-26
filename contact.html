@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout Page</title>
+
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+   
+    <div class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="user-menu">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="cart.html">My Cart</a></li>
+                        <li><a href="single-product.html">Single product</a></li>
+                        <li><a href="checkout.html"> Checkout</a></li>
+                        <li><a href="members.html">Students</a></li>
+                        <li><a href="contact.html"> Contact Us</a></li>
+                        <li><a href="login.html"> Logout</a></li>
+                    </ul>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div> <!-- End header area -->
+    
+    
+   <!-- End mainmenu area -->
+    
+
+    
+    <div class="single-product-area">
+        <!-- <div class="zigzag-bottom"></div> -->
+        <div class="container">
+                                            
+            <form name="contact" id="contact">
+
+                <div id="customer_details" class="col2-set">
+                    <div class="" style="width: 60%; padding: 20px; margin: auto;">
+                        <div class="woocommerce-billing-fields">
+                            <p>
+                                <label class="" for="name">First Name 
+                                </label>
+                                <input type="text" value="" placeholder="Name" id="name" name="name">
+                            </p>
+
+                            <p>
+                                <label for="phone">Phone 
+                                </label>
+                                <input type="text" value="" placeholder="phone" id="phone" name="phone" >
+                            </p>
+                            <p>
+                                <label class="" for="text">Text 
+                                </label>
+                                <textarea id="text"  name="text" cols="30" rows="10"></textarea>
+                            </p>
+                        </div>
+                        <input type="submit" value="Submit"></input>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <div class="footer-bottom-area" style="text-align: center; padding: 5px;">
+        <p>&copy; 2024 Glasses Store All Rights Reserved. </p>
+    </div>
+   
+   
+
+    
+	<script>
+		const form = document.getElementById('contact');
+		const namefield = document.getElementById('name');
+		const phonefield = document.getElementById('phone');
+		const textfield = document.getElementById('text');
+
+		form.addEventListener('submit', (e) => {
+		  if (!checkName()) {
+			e.preventDefault();
+			alert('Enter Name');
+			namefield.focus();
+		  }
+
+		  if (!checkphone()) {
+			e.preventDefault();
+			alert('Enter Phone');
+			phonefield.focus();
+		  }
+
+		  if (!checkText()) {
+			e.preventDefault();
+			alert('Enter Message');
+			textfield.focus();
+		  }
+		});
+
+		function checkName() {
+		  const name = namefield.value.trim();
+		  return name !== '';
+		}
+		function checkphone() {
+		  const name = namefield.value.trim();
+		  return name !== '';
+		}
+
+		function checkText() {
+		  const text = textfield.value.trim();
+		  return text !== '';
+		}
+	</script>
+
+  </body>
+</html>

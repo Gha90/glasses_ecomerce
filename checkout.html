@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout Page</title>
+
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+   
+    <div class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="user-menu">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="cart.html">My Cart</a></li>
+                        <li><a href="single-product.html">Single product</a></li>
+                        <li><a href="checkout.html"> Checkout</a></li>
+                        <li><a href="members.html">Students</a></li>
+                        <li><a href="contact.html"> Contact Us</a></li>
+                        <li><a href="login.html"> Logout</a></li>
+                    </ul>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div> <!-- End header area -->
+    
+    
+   <!-- End mainmenu area -->
+    
+
+    
+    <div class="single-product-area">
+        <!-- <div class="zigzag-bottom"></div> -->
+        <div class="container">
+                                            
+            <form enctype="multipart/form-data" action="#" class="" method="post" name="checkout">
+
+                <div id="customer_details" class="col2-set">
+                    <div class="" style="width: 75%; padding: 20px; margin: auto;">
+                        <div class="woocommerce-billing-fields">
+                            <h3>Billing Details</h3>
+                            <p id="billing_first_name_field" class=" ">
+                                <label class="" for="billing_first_name">First Name 
+                                </label>
+                                <input type="text" value="" placeholder="" id="billing_first_name" name="billing_first_name" class=" ">
+                            </p>
+                           
+
+                            
+                            <div class="clear"></div>
+                            <p id="billing_address_1_field" class="form-row form-row-wide address-field ">
+                                <label class="" for="billing_address_1">Address 
+                                </label>
+                                <input type="text" value="" placeholder="Street address" id="billing_address_1" name="billing_address_1" class=" ">
+                            </p>
+
+                            
+
+                            <p id="billing_city_field" class="form-row form-row-wide address-field " data-o_class="form-row form-row-wide address-field ">
+                                <label class="" for="billing_city">Town / City 
+                                </label>
+                                <input type="text" value="" placeholder="Town / City" id="billing_city" name="billing_city" class=" ">
+                            </p>
+
+                            
+                            <p id="billing_phone_field" class="">
+                                <label class="" for="billing_phone">Phone 
+                                </label>
+                                <input type="text" value="" placeholder="" id="billing_phone" name="billing_phone" class=" ">
+                            </p>
+                            <div class="clear"></div>
+
+
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <h3 id="order_review_heading">Your order</h3>
+
+                <div id="order_review" style="position: relative;">
+                    <table class="shop_table">
+                        <thead>
+                            <tr>
+                                <th class="product-name">Product</th>
+                                <th class="product-total">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cart_item">
+                                <td class="product-name">
+                                    Ship Your Idea <strong class="product-quantity">× 1</strong> </td>
+                                <td class="product-total">
+                                    <span class="amount">2250 SAR</span> </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+
+                            <tr class="cart-subtotal">
+                                <th>Cart Subtotal</th>
+                                <td><span class="amount">2250 SAR</span>
+                                </td>
+                            </tr>
+
+                            <tr class="shipping">
+                                <th>Shipping and Handling</th>
+                                <td>
+
+                                    Free Shipping
+                                    <input type="hidden" class="shipping_method" value="free_shipping" id="shipping_method_0" data-index="0" name="shipping_method[0]">
+                                </td>
+                            </tr>
+
+
+                            <tr class="order-total">
+                                <th>Order Total</th>
+                                <td><strong><span class="amount">2250 SAR</span></strong> </td>
+                            </tr>
+
+                        </tfoot>
+                    </table>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <div class="footer-bottom-area" style="text-align: center; padding: 5px;">
+        <p>&copy; 2024 Glasses Store All Rights Reserved. </p>
+    </div>
+   
+   
+
+  </body>
+</html>

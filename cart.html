@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart Page</title>
+    <!-- Font Awesome -->
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+  </head>
+  <body>
+   
+    <div class="header-area">
+        <div class="container">
+            <div class="user-menu">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="cart.html">My Cart</a></li>
+                    <li><a href="single-product.html">Single product</a></li>
+                    <li><a href="checkout.html"> Checkout</a></li>
+                    <li><a href="members.html">Students</a></li>
+                    <li><a href="contact.html"> Contact Us</a></li>
+                    <li><a href="login.html"> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- End header area -->
+
+
+    <div class="single-product-area">
+        <div class="container">
+            <div class=" floatleft" style="width: 35%;">
+                <div class="single-sidebar">
+                    <h2 class="sidebar-title">Products</h2>
+                    <div class="thubmnail-recent">
+                        <img src="img/gl.jpg" class="recent-thumb" alt="">
+                        <h2><a href="single-product.html">Glasses</a></h2>
+                        <div class="product-sidebar-price">
+                            <ins>250 SAR</ins> 
+                        </div>                             
+                    </div>
+                    <div class="thubmnail-recent">
+                        <img src="img/gl3.jpg" class="recent-thumb" alt="">
+                        <h2><a href="single-product.html">Glasses</a></h2>
+                        <div class="product-sidebar-price">
+                            <ins>250 SAR</ins> 
+                        </div>                             
+                    </div>
+                    <div class="thubmnail-recent">
+                        <img src="img/gl.jpg" class="recent-thumb" alt="">
+                        <h2><a href="single-product.html">Glasses</a></h2>
+                        <div class="product-sidebar-price">
+                            <ins>250 SAR</ins> 
+                        </div>                             
+                    </div>
+                    <div class="thubmnail-recent">
+                        <img src="img/gl5.jpg" class="recent-thumb" alt="">
+                        <h2><a href="single-product.html">Glasses</a></h2>
+                        <div class="product-sidebar-price">
+                            <ins>250 SAR</ins> 
+                        </div>                             
+                    </div>
+                </div>
+            </div>
+            
+        <div class=" floatleft" style="width: 60%;">
+                <div class="product-content-right">
+                    <div class="woocommerce">
+                        <form method="post" action="#">
+                            <table cellspacing="0" class="shop_table cart">
+                                <thead>
+                                    <tr>
+                                        <th class="product-remove">&nbsp;</th>
+                                        <th class="product-thumbnail">&nbsp;</th>
+                                        <th class="product-name">Product</th>
+                                        <th class="product-price">Price</th>
+                                        <th class="product-quantity">Quantity</th>
+                                        <th class="product-subtotal">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="cart_item">
+                                        <td class="product-remove">
+                                            <a title="Remove this item" class="remove" href="#">×</a> 
+                                        </td>
+
+                                        <td class="product-thumbnail">
+                                            <a href="single-product.html"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/gl.jpg"></a>
+                                        </td>
+
+                                        <td class="product-name">
+                                            <a href="single-product.html">Galasses</a> 
+                                        </td>
+
+                                        <td class="product-price">
+                                            <span class="amount">1500 SAR</span> 
+                                        </td>
+
+                                        <td class="product-quantity">
+                                            <div class="quantity buttons_added">
+                                                <input type="button" class="minus" value="-">
+                                                <input type="number" size="4" class=" qty text" title="Qty" value="1" min="0" step="1">
+                                                <input type="button" class="plus" value="+">
+                                            </div>
+                                        </td>
+
+                                        <td class="product-subtotal">
+                                            <span class="amount">1500 SAR</span> 
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </form>
+                        <div class="cart-collaterals">
+                            <div class="cart_totals ">
+                                <h2>Cart Totals</h2>
+
+                                <table cellspacing="0">
+                                    <tbody>
+                                        <tr class="cart-subtotal">
+                                            <th>Cart Subtotal</th>
+                                            <td><span class="amount">1500 SAR</span></td>
+                                        </tr>
+                                        <tr class="shipping">
+                                            <th>Shipping and Handling</th>
+                                            <td>Free Shipping</td>
+                                        </tr>
+
+                                        <tr class="order-total">
+                                            <th>Order Total</th>
+                                            <td><strong><span class="amount">1500 SAR</span></strong> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+                    </div>                        
+                </div>                    
+        </div> 
+        </div>
+    </div>
+
+
+    <footer class="footer-bottom-area" style="text-align: center; padding: 5px; margin-top: 300px;" >
+        <p>&copy; 2024 Glasses Store All Rights Reserved.</p>
+    </footer> <!-- End footer bottom area -->
+   
+  </body>
+</html>
